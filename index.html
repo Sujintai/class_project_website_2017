@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- Justin Cai -->
+<html>
+	<head>
+		<link rel = "stylesheet" href = "websiteCSS.css" />
+		<link rel = "icon" href = "images/icon.png" />
+		<title>Home</title>
+		<style>
+		</style>
+		<script src = "websiteJS.js">	
+		</script>
+	</head>
+	<body onload = "initialize();">
+		<img class = "seasonbgnd" src = "images/seasons.jpg" />
+		<span class = "everythingContainer">
+			<h1 class = "header">Seasons</h1>
+			<div class = "topbar">
+				<a href = "index.html">Home</a>
+				<a href = "spring.html">Spring</a>
+				<a href = "summer.html">Summer</a>
+				<a href = "fall.html">Fall</a>
+				<a href = "winter.html">Winter</a>
+			</div>
+			<div class = "leftbar">
+				<div id = "subdiv1" class = "subtopic" onclick = "changeContent(0);">Home</div>
+				<div id = "subdiv2" class = "subtopic" onclick = "changeContent(1);">What is a season?</div>		
+			</div>
+			<div class = "main">
+				<div id = "contentDiv1">
+					<span class = "subtopicHeader">Click on the items at the top bar to learn about each of the seasons</span>
+					
+				</div>
+				<div id = "contentDiv2">
+					<span class = "subtopicHeader">What is a season?</span>
+					<div class = "maintext">
+						Seasons are caused by the Earth's tilted axis. As the Earth revolves around the Sun, it has 4 main "stages" of the revolution called seasons. The season depends on how the Earth is tilted toward the Sun. Each season causes different things to happen on Earth.
+						<br />
+						<img src = "images/space.jpg" />
+						<div class = "caption">Here's a diagram of how the Earth's axis creates seasons.</div>
+					</div>
+				</div>
+			</div>
+		</span>
+	</body>
+</html>

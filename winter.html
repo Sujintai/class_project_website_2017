@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- Justin Cai -->
+<html>
+	<head>
+		<link rel = "stylesheet" href = "websiteCSS.css" />
+		<link rel = "icon" href = "images/icon.png" />
+		<title>Winter</title>
+		<style>
+		</style>
+		<script src = "websiteJS.js">
+		</script>
+	</head>
+	<body onload = "initialize();">
+		<img class = "seasonbgnd" src = "images/winter.jpg" />
+		<span class = "everythingContainer">
+			<h1 class = "header">Winter</h1>
+			<div class = "topbar">
+				<a href = "index.html">Home</a>
+				<a href = "spring.html">Spring</a>
+				<a href = "summer.html">Summer</a>
+				<a href = "fall.html">Fall</a>
+				<a href = "winter.html">Winter</a>
+			</div>
+			<div class = "leftbar">
+				<div id = "subdiv1"  class = "subtopic" onclick = "changeContent(0);">What Happens?</div>
+				<div id = "subdiv2"  class = "subtopic" onclick = "changeContent(1);">When is Winter?</div>
+				<div id = "subdiv3"  class = "subtopic" onclick = "changeContent(2);">How's the Weather?</div>
+			</div>
+			<div class = "main">
+				<div id = "contentDiv1">
+					<span class = "subtopicHeader">What Happens?</span>
+					<div class = "maintext">
+						The Winter time brings snow occasionally which stay on the ground for a while. It creates a beautiful landscape, however transportation is not easy during the Winter due to snow/ice on the ground. The Winter has the shortest days as well as the longest nights.
+						<br />
+						<img src = "images/winter/park.jpg" />
+						<div class = "caption">A snow covered park in NYC.</div>
+					</div>
+				</div>
+				<div id = "contentDiv2">
+					<span class = "subtopicHeader">When is Winter?</span>
+					<div class = "maintext">
+						The Winter time is from December to March in the Northern Hemisphere and from June to September in the Southern Hemisphere.
+						<br />
+						<img src = "images/winter/fort greene.jpg" />
+						<div class = "caption">Fort Greene Park during the Winter.</div>
+					</div>	
+				</div>
+				<div id = "contentDiv3">
+					<span class = "subtopicHeader">How's the Weather?</span>
+					<div class = "maintext">
+						Winter is the coldest season of them all. In NYC, temperatures on average during the Winter range from 15-40 degrees fahrenheit. It is really cold and if you expect to survive outside during the Winter, you need to wear multiple layers of clothing. 
+						<br />
+						<img src = "images/winter/skyline.jpg" />
+						<div class = "caption">A beautiful view of the NYC skyline showing the amount of ice in the river.</div>
+					</div>		
+				</div>
+			</div>
+		</span>
+	</body>
+</html>

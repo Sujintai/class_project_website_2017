@@ -1,0 +1,121 @@
+/**
+{
+	border: thin solid red;
+}*/
+body
+{
+	text-align: center;
+}
+.header
+{
+	display: inline-block;
+	width: 150px;
+	font-family: cambria;
+	font-size: 30pt;
+	background-color: white;
+	margin-bottom: 1%;
+	padding: 10px 80px 5px 80px;
+	border: thick solid black;
+	border-radius: 12px;
+}
+.everythingContainer
+{
+	position: relative;
+}
+.topbar
+{
+
+	border: thick solid black;
+	border-radius: 12px;
+	//font-family: impact;
+	font-weight: bold;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+	font-size: 23pt;
+	background-color: white;
+	margin-left: 2%;
+	margin-right: 2%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	opacity: .9;
+}
+.seasonbgnd
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index:-1;
+}
+.leftbar
+{
+	border: thick solid black;
+	border-radius: 12px;
+	margin-top: 2%;
+	width: 25%;
+	margin-left: 2%;
+	margin-right: 2%;
+	float: left;
+	background-color: white;
+	opacity: .9;
+	
+}
+.main
+{
+	display: inline-block;
+	position: relative;
+	border:thick solid black;
+	border-radius: 12px;
+	margin-top: 2%;
+	margin-left:0;
+	margin-right: 2%;
+	background-color: white;
+	height: 100%;
+	width: 65%;
+	float: right;
+	padding: 10px 5px 10px 5px;
+}
+.topbar>a
+{
+	border: 2px solid black;
+	background-color: #3399ff;
+	border-radius: 10px;
+	margin: 0 3%;
+	padding: 10px 18px 10px 18px;
+	color: white;
+	text-decoration: none;
+}
+.subtopic
+{
+	font-size: 20pt;
+	border: thin solid black;
+	padding: 10px 0px 10px 0px;
+	cursor: pointer;
+}
+.subtopicHeader
+{
+	display: block;
+	font-style: italic;
+	font-size: 26pt;
+	font-weight: bold;
+}
+.maintext
+{
+	font-size: 20pt;
+	text-align: left;
+	padding: 10px 10px 10px 10px;
+}
+.maintext>img
+{
+	margin-top: 10px;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 2px 2px 2px 2px;
+	width: 600px;
+}
+.caption
+{
+	font-size: 16pt;
+	font-weight: bold;
+	font-style: italic;
+}

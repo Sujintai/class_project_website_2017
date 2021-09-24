@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- Justin Cai -->
+<html>
+	<head>
+		<link rel = "stylesheet" href = "websiteCSS.css" />
+		<link rel = "icon" href = "images/icon.png" />
+		<title>Winter</title>
+		<style>
+		</style>
+		<script>
+			function initialize()
+			{
+				content1 = document.getElementById("contentDiv1");
+				content2 = document.getElementById("contentDiv2");
+				
+				contentList = [content1, content2];
+				contentDisplay = [true, false];
+				contentList[1].style.display = "none";
+			}
+			function changeContent(idx)
+			{
+				contentDisplay = [false, false];
+				contentDisplay[idx] = true;
+				display();
+			}
+			function display()
+			{
+				for(var i = 0; i<contentDisplay.length; i++)
+				{
+					if(contentDisplay[i])
+					{
+						contentList[i].style.display = "inline-block";
+					}
+					else
+					{
+						contentList[i].style.display = "none";
+					}
+				}
+			}
+		</script>
+	</head>
+	<body onload = "initialize();">
+		<img class = "seasonbgnd" src = "images/winter.jpg" />
+		<span class = "everythingContainer">
+			<h1 class = "header">Winter</h1>
+			<div class = "topbar">
+				<a href = "index.html">Home</a>
+				<a href = "spring.html">Spring</a>
+				<a href = "summer.html">Summer</a>
+				<a href = "fall.html">Fall</a>
+				<a href = "winter.html">Winter</a>
+			</div>
+			<div class = "leftbar">
+				<div class = "subtopic" onclick = "changeContent(0);">Home</div>
+				<div class = "subtopic" onclick = "changeContent(1);">subtopic</div>
+				
+			</div>
+			<div class = "main">
+				<div id = "contentDiv1">
+					<span class = "subtopicHeader">Content</span>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquet vehicula dictum. Aenean fermentum ut libero id egestas. Nullam condimentum gravida metus et lacinia. Fusce porttitor nisl eu orci pellentesque bibendum. Aliquam in eros metus. Fusce ligula felis, fermentum vel rhoncus ac, congue sit amet justo. Cras malesuada tellus in augue cursus ornare. Donec ut scelerisque arcu. Donec euismod sapien quis arcu tristique elementum. Aenean sit amet luctus turpis.
+
+					Nam dictum dignissim nisl in consequat. Vestibulum eget magna purus. Phasellus sollicitudin mauris felis, in eleifend leo blandit at. In feugiat tempor mattis. Phasellus ac lobortis diam. Nunc interdum at diam eu fringilla. Maecenas tincidunt dictum interdum. Sed placerat ante nec lacinia rhoncus. Suspendisse varius egestas odio, in laoreet urna fermentum quis. Nam dictum porta leo ut tristique. Aliquam pretium ligula quam, a elementum mauris tempor ac.
+
+					Morbi non varius erat. Aliquam porttitor dui orci, vitae pharetra arcu dictum non. Nunc rutrum pretium neque, ut malesuada nunc. Phasellus vitae venenatis dui. Sed ornare quam at diam ornare cursus. Nunc fringilla id odio sit amet varius. Nulla dictum velit metus, id dictum sapien imperdiet quis. Vestibulum et placerat est.
+
+					Etiam id lacinia lectus. Integer turpis lorem, pellentesque sed purus non, fermentum cursus leo. Quisque ut lacus at velit molestie pretium nec quis magna. Aenean nec mattis nisl. Nulla quis dolor quis diam ullamcorper dapibus. Vestibulum nec ornare magna. Morbi egestas nisi vel tincidunt facilisis. Cras nisi metus, ullamcorper tincidunt consequat vitae, ultrices id mauris. Nunc quis nisi eros. Pellentesque vestibulum aliquam tortor. Proin finibus massa vel faucibus vulputate. Ut pulvinar quam non nisl efficitur egestas. Pellentesque sit amet orci at nisl viverra maximus at ut massa. Nulla facilisi.
+
+					Morbi nibh nulla, condimentum sit amet purus rutrum, dignissim scelerisque libero. Donec quis felis venenatis, mattis nisi ac, blandit tortor. Cras accumsan mauris sed fermentum viverra. Nunc efficitur faucibus dictum. Quisque et quam vulputate, lobortis tortor quis, aliquet velit. Curabitur non diam nisi. Curabitur a egestas sapien. Vivamus a lectus elementum lorem tempor posuere vitae id sapien.
+				</div>
+				<div id = "contentDiv2">
+					<span class = "subtopicHeader">What is a season?</span>
+				</div>
+			</div>
+		</span>
+	</body>
+</html>
